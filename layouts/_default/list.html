@@ -14,7 +14,8 @@
             <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">
               {{ .Title }}
               {{ if .Description }}
-                <small> - {{ .Description }}</small>
+                <br>
+                <small>{{ .Description }}</small>
               {{ end }}
             </a>
             <div class="archive__list-date">
@@ -35,6 +36,7 @@
               {{ end }}
             </div>
           </li>
+          <hr>
         </ul>
       {{ end }}
 
