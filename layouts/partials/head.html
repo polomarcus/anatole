@@ -5,9 +5,9 @@
       {{ with .Title }}
         {{ . }} |
       {{ end }}
-      {{- .Site.Params.author -}}
+      {{- .Site.Params.author.name -}}
     {{ else }}
-      {{- .Site.Params.author -}}{{ with .Title }}
+      {{- .Site.Params.author.name -}}{{ with .Title }}
         |
         {{ . }}
       {{ end }}
