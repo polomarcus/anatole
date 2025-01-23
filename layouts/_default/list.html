@@ -12,7 +12,11 @@
         <ul class="archive__list">
           <li class="archive__list-item">
             <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">
-              {{ .Title }}
+              {{ if (eq .Site.Params.disableArchiveTitleStyling false) }}
+                {{ .Title }}
+              {{ else }}
+                {{ upper .Title }}
+              {{ end }}
               {{ if .Description }}
                 <br>
                 <small>{{ .Description }}</small>
