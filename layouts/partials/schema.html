@@ -5,7 +5,7 @@
       "@type": "WebSite",
       "name": {{ .Site.Title | jsonify | safeJS }},
       "url": "{{ .Site.BaseURL }}",
-      "description": "{{ .Site.Params.description }}",
+      "description": "{{ .Site.Params.descriptionseo }}",
       "thumbnailUrl": "{{ .Site.Params.Logo | absURL }}",
       "license": "{{ .Site.Params.Copyright }}"
     }
