@@ -22,10 +22,10 @@
   <meta name="author" content="{{ .Site.Params.author }}" />
   <meta
     name="description"
-    content="{{ if .Params.description }}
-      {{- .Params.description -}}
+    content="{{ if .Site.Params.descriptionseo }}
+      {{- .Site.Params.descriptionseo -}}
     {{ else }}
-      {{- .Site.Params.description -}}
+      {{- .Params.description -}}
     {{ end }}"
   />
   {{ if .Params.redirectUrl }}
